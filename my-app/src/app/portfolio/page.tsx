@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 // import Contact from "./components/Contact";
 // import StartCanvas from "./components/StartCanvas";
 import "./index.css";
+import About from "./components/About";
 
 export default function Portfolio() {
   return (
@@ -16,8 +17,9 @@ export default function Portfolio() {
         <Navbar />
         <Hero />
       </div>
-      {/* <About />
-      <Experience />
+      <About />
+
+      {/* <Experience />
       <Tech />
       <Works />
       <Contact />
