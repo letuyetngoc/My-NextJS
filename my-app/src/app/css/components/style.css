@@ -1,6 +1,77 @@
+@import "tailwindcss";
+
+/* ---- */
 .text {
-  @apply relative top-[20px] text-white inline-block text-[5rem];
+  @apply relative top-[20px] text-white inline-block text-[50px] animate-[bound_0.4s_ease_infinite_alternate];
 }
+
+h1 span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+h1 span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+h1 span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+h1 span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+h1 span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+h1 span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.text-shadow-custom {
+  text-shadow: 0 1px 0 #b7b7b7, 0 2px 0 #b7b7b7, 0 3px 0 #b7b7b7,
+    0 4px 0 #b7b7b7, 0 5px 0 #b7b7b7, 6px 0 transparent, 0 7px 0 transparent,
+    0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+@keyframes bound {
+  100% {
+    top: 0px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+      0 5px 0 #ccc, 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+      0 9px 0 transparent, 0 60px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+/* ---  */
+
+.card {
+  @apply w-[190px] h-[254px] bg-[#07182E] relative flex justify-center items-center overflow-hidden rounded-[20px];
+}
+.card::before {
+  content: "";
+  @apply absolute w-[100px] h-[130%];
+  background-image: linear-gradient(
+    180deg,
+    rgb(0, 183, 255),
+    rgb(255, 48, 255)
+  );
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  background: #07182e;
+  inset: 5px;
+  border-radius: 15px;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* ----  */
+
 @keyframes circle {
   0% {
     transform: rotate(0deg);
@@ -55,4 +126,41 @@
     box-shadow: 30px 0 0 #15ff00;
     margin-top: 0;
   }
+}
+
+/* ----  */
+.cards {
+  @apply relative;
+}
+.card_item {
+  @apply z-1 absolute w-[254px] h-[190px] rounded-[10px] transition-all duration-500 ease-out
+  overflow-hidden translate-x-0 translate-y-0 perspective-[905px] rotate-x-0 rotate-y-0 rotate-z-[-8deg];
+}
+.card_item.one {
+  @apply top-[-120px] left-[-150px];
+  background: linear-gradient(180deg, #ff0055 0%, #000066 100%);
+}
+.card_item.two {
+  @apply top-[-95px] left-[-125px];
+  background: linear-gradient(180deg, #fa00ff 0%, #01f998 99%);
+}
+.card_item.three {
+  @apply top-[-70px] left-[-100px];
+  background: linear-gradient(180deg, #c0f901 0%, #fa00ff 100%);
+}
+.card_item:hover {
+  @apply z-4 perspective-[1000px] rotate-x-0 rotate-y-0 rotate-z-0 transition-all duration-500 ease-out;
+}
+.cardDetail {
+  @apply w-[55%] h-full flex flex-col justify-between items-end bg-[rgba(0,0,0,0.8)] duration-500 perspective-[2000px] rotate-y-[-90deg];
+  transform-origin: left;
+}
+.card_item:hover .cardDetail {
+  @apply perspective-[2000px] rotate-y-0;
+}
+.cardDetailHeader {
+  @apply font-[600] text-[#edb899] text-center;
+}
+.cardDetailButton {
+  @apply px-[3px] py-[6px] rounded-[25px] bg-[#edb899] text-[#000] font-[600];
 }

@@ -1,11 +1,9 @@
 import backend from "../assets/images/backend.png";
 import carrent from "../assets/images/carrent.png";
-import meta from "../assets/images/company/meta.png";
 import creator from "../assets/images/creator.png";
 import jobit from "../assets/images/jobit.png";
 import mobile from "../assets/images/mobile.png";
-import shopify from "../assets/images/company/shopify.png";
-import starbucks from "../assets/images/company/starbucks.png";
+import rta from "../assets/images/company/rta.png";
 import css from "../assets/images/tech/css.png";
 import docker from "../assets/images/tech/docker.png";
 import figma from "../assets/images/tech/figma.png";
@@ -19,7 +17,7 @@ import redux from "../assets/images/tech/redux.png";
 import tailwind from "../assets/images/tech/tailwind.png";
 import threejs from "../assets/images/tech/threejs.svg";
 import typescript from "../assets/images/tech/typescript.png";
-import tesla from "../assets/images/company/tesla.png";
+import wistek from "../assets/images/company/wistek.png";
 import tripguide from "../assets/images/tripguide.png";
 import web from "../assets/images/web.png";
 
@@ -114,57 +112,43 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Frontend Developer",
+    company_name: "Real-Time-Analytics",
+    icon: rta,
+    iconBg: "#ffffff",
+    date: "10/2022 - 02/2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Programme product projects: rtWork",
+      "Tech Stacks: ReactJS, Redux, Boostrap4, JQuery",
+      "Collaborate with team leads and other developers to create and implement website designs",
+      "Test and debug code to ensure cross-browser and cross-mobile compatibility",
+      "Improve the UX, UI as required",
+      "Developed prototypes and mockups for new features, enhancing UX and UI design",
+      "Understanding flow code and fix bug",
+      "Use version control systems such as Git to manage code changes and collaborate with team members"
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Frontend Developer",
+    company_name: "Wistek",
+    icon: wistek,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "03/2024 - 06/2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Worked at two projects:",
+      "1) WisEdu",
+      "Size 12 (1 Leader, 5 FE Developers, 4 BE Developers, 2 BA, 3 QC)",
+      "Tech Stacks: NextJS, Tailwind, Context API, Socket, Redux toolkit, React Hook Form, SCSS",
+      "Responsibility:",
+      "Collaborate with BA team to finalize requirements.",
+      "Work closely with the backend team to integrate APIs",
+      "Build website interface from designed figma, implement features, enhance user UX, UI.",
+      "Responsive on different devices and multi-browser support.",
+      "Build reusable components and optimize performance.",
+      "Develop core components for applications using ReactJs and create custom components to use in HTML tags",
+      "Investigate performance issues, measure results, and provide conclusions based on findings."
     ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  }
 ];
 
 const testimonials = [

@@ -9,6 +9,9 @@ import Hero from "./components/Hero";
 // import StartCanvas from "./components/StartCanvas";
 import "./index.css";
 import About from "./components/About";
+import Experience from "./components/Experience";
+import Tech from "./components/Tech";
+import Contact from "./components/Contact";
 
 export default function Portfolio() {
   return (
@@ -17,11 +20,14 @@ export default function Portfolio() {
         <Navbar />
         <Hero />
       </div>
-      <About />
+      {About}
 
-      {/* <Experience />
-      <Tech />
-      <Works />
+      {Experience}
+      {/* <Works /> */}
+      {Tech}
+      {/* <Contact /> */}
+      {/* <Tech />
+      
       <Contact />
       <StartCanvas /> */}
     </div>

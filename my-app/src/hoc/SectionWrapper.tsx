@@ -1,9 +1,10 @@
+"use client"
 import { motion } from "framer-motion";
 
 import { staggerContainer } from "../utils/motion";
 import { styles } from "@/utils/style";
 
-const StarWrapper = (Component: React.ComponentType, idName: string) => {
+const SectionWrapper = (Component: React.ComponentType, idName: string) => {
   return (
     <motion.section
       variants={staggerContainer()}
@@ -21,4 +22,4 @@ const StarWrapper = (Component: React.ComponentType, idName: string) => {
   );
 };
 
-export default StarWrapper;
+export default SectionWrapper;
