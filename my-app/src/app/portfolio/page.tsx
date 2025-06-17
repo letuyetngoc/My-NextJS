@@ -11,7 +11,6 @@ import "./index.css";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Tech from "./components/Tech";
-import Contact from "./components/Contact";
 
 export default function Portfolio() {
   return (
